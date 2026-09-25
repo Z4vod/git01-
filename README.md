@@ -139,17 +139,21 @@ Adresář `srv01/.vagrant/` vznikne pouze lokálně při práci s Vagrantem a ne
 
 ## Moje řešení
 
-- **Distribuce a verze:** doplňte
-- **Použitý Vagrant box:** doplňte
-- **Adresář serveru:** doplňte
-- **Výsledek spuštění a přihlášení:** doplňte
-- **Případné problémy a jejich řešení:** doplňte
-- **Kontrolní kód a záznam ze serveru:** sem vložte celý Markdown blok vypsaný skriptem
-- **Bonus – AI obrázek a použitý prompt:** doplňte, pokud plníte bonus
+- **Distribuce a verze:** Debian GNU/Linux 13 (trixie)
+- **Použitý Vagrant box:** bento/debian-13
+- **Adresář serveru:** srv01
+- **Výsledek spuštění a přihlášení:** Server se úspěšně spustil příkazem `vagrant up`. Přihlášení přes `vagrant ssh` proběhlo bez problémů, uvnitř bylo pomocí `cat /etc/os-release` ověřeno, že běží Debian GNU/Linux 13 (trixie).
+- **Případné problémy a jejich řešení:** Při vytváření adresáře `srv01` přes GitHub webové rozhraní vznikl omylem soubor místo složky. Opraveno lokálně smazáním souboru a vytvořením správné složky se souborem `Vagrantfile`.
+- **Kontrolní kód a záznam ze serveru:**
 
-## Nápověda a odkazy
+**Kontrolní kód:** `SPOS-3I-7d87129a585e863bb10053a690784c21a0693ce7db02a3e6a53488f006ceeb23`
 
-- [Vagrant – příklady VM v ročníkovém projektu](https://github.com/sposdknl/2026-sposdk-osy/tree/main/Vagrant)
-- [Jak probíhá výuka operačních systémů na SPOŠ](https://open-tech.cz/2024/09/01/operacni-systemy-na-spos-rovnou-do-praxe/)
-- [Dokumentace Vagrantu](https://developer.hashicorp.com/vagrant/docs)
-- [Dokumentace .gitignore](https://git-scm.com/docs/gitignore)
+```text
+Uloha: git-vagrant / SPOS / 3. I / v1
+Distribuce: Debian GNU Linux 13 (trixie)
+Hostname: debian13
+Kernel: 6.12.48+deb13-amd64
+Virtualizace: oracle
+Cas UTC: 2026-09-25T06:53:54Z
+Nahodne ID: 3d52b75e-d1ae-4703-9566-d75c90fe1a06
+```
